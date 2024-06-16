@@ -1,0 +1,50 @@
+h1{color: rgb(0, 255, 34);}
+
+h2{color: darkgoldenrod; text-decoration: underline;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+p{font-family: 'Courier New', Courier, monospace}
+
+    /*we use #(eshtak) before an id in css  */
+
+#banner, banner{background-color: rgba(0, 225, 255, 0.116); margin: -20px; text-align: center}
+
+
+
+#nav, nav{background-color: rgb(188, 188, 238); color: aliceblue ; padding: 10px;
+      text-align: center;}
+
+    /*notice that color does not change the links names.
+    so the plan will be to use #nav a{color: aliceblue}. NOTICE THE a (anker tag).
+    We use padding which will require a value */
+
+    #nav a, nav a{color: aliceblue;
+        text-decoration: none /*this helped to remove the line below the links*/;
+        font-size: large;
+        margin: 8px /*help to create spaces between the links*/;}
+
+
+
+
+#footer, footer{background-color: darkgreen;min-height: 0px ; padding: 100px /*NOTE:padding can replace the height + it
+        puts the content in the middle from top top bottom*/; text-align: center; }
+
+        #footer a, footer a{text-decoration: overline; color: white; ;
+                font-size: large; margin-right: 100px; margin-top: 100px;}
+        
+    /* WE WANT WHEN WE CLICK ON AMAZON OR EBAY OR TREVOIR LINK THE SECTION TO HIGHLIGHT 
+    YELLOW*/
+    #footer a:hover, footer a:hover{ background-color: yellow; color: black /*the color of text
+        will change black when you put mouse on top*/; padding: 100px  /*padding here will
+    help our yellow color to fill the all background*/ }
+
+
+#main_or_body, main{ margin: auto; width: 80%;}
+
+article{margin:50px}
+
+/*NOTE: instead of sharing the styling, you can separate them. for e.g.
+#main_or_body, main{ margin: auto; width: 80%;} =
+                                                 #main_or_body{ margin: auto; width: 80%;}
+                                                 main{ margin: auto; width: 80%;}*/
